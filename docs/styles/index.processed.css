@@ -7641,7 +7641,8 @@ li {
   overflow-x: hidden; }
 
 .slider {
-  background-color: #0193cf; }
+  background-color: #0193cf;
+  overflow: hidden; }
   .slider .hero-slider {
     position: relative;
     margin-bottom: 0; }
@@ -7676,12 +7677,10 @@ li {
         -ms-flex-pack: center;
             justify-content: center; }
     .slider .hero-slider__item figure {
-      position: relative;
       padding: 0;
       margin: 0;
       text-align: center;
-      min-width: 100%;
-      overflow: hidden; }
+      min-width: 100%; }
     .slider .hero-slider__item img {
       display: block;
       margin: 0 auto;
