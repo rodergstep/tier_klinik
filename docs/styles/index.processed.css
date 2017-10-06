@@ -7547,9 +7547,11 @@ li {
 .header {
   background-color: #fff; }
   .header .top-header {
-    padding-top: 7px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     color: #fff;
-    background-color: #003366; }
+    background-color: #003366;
+    background-image: url("../img/clean_textile_dark.png"); }
     .header .top-header .top-header__caption {
       font-family: "futura-pt", sans-serif;
       font-size: 17.2px;
@@ -7778,9 +7780,9 @@ li {
     color: #fff; }
 
 .content__subtitle {
+  margin-bottom: 12px;
   font-family: "eurostile-condensed", sans-serif;
   font-size: 29px;
-  line-height: 0.88;
   letter-spacing: 2.9px;
   color: #5b6c72; }
   @media (max-width: 1200px) {
@@ -7798,6 +7800,8 @@ li {
       font-size: calc(24.6px + 3.53333vw) ; } }
 
 .content-head {
+  -webkit-box-shadow: inset 0px 5px 13px 0px rgba(91, 108, 114, 0.2);
+  box-shadow: inset 0px 5px 13px 0px rgba(91, 108, 114, 0.2);
   background-color: #cedde2; }
   .content-head .content-head__inner {
     padding-top: 50px;
@@ -7855,6 +7859,7 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-bottom: solid 1px #fff;
   background-image: url("../img/content/video_bg.jpg");
   background-position: 50%;
   background-repeat: no-repeat;
@@ -7873,7 +7878,7 @@ li {
 
 #modal__video-hero {
   margin: 0 auto;
-  max-width: 768px; }
+  max-width: 992px; }
 
 .icon-paw {
   display: inline-block;
@@ -7889,8 +7894,8 @@ li {
 
 .citation__title {
   display: inline-block;
-  padding: 0 35px 13px;
-  margin-bottom: 25px;
+  padding: 0 35px 20px;
+  margin-bottom: 20px;
   font-size: 18px;
   font-weight: 900;
   letter-spacing: 4.1px;
@@ -7920,7 +7925,7 @@ li {
 
 .facts {
   background-color: #0099d6;
-  background-image: url("../img/content/pattern-blue.jpg");
+  background-image: url("../img/clean_textile_blue.png");
   background-repeat: repeat;
   padding-top: 60px;
   padding-bottom: 76px; }
@@ -7950,24 +7955,26 @@ li {
         -ms-flex-pack: center;
             justify-content: center;
     font-family: "eurostile-condensed", sans-serif;
-    font-size: 21px;
-    line-height: 1.17;
+    font-size: 22px;
+    line-height: 1.37;
     letter-spacing: 0.2px;
     color: #5b6c72; }
     @media (max-width: 1200px) {
       .history .history__text {
-        font-size: calc(15.4px + 0.46667vw) ; } }
+        font-size: calc(15.6px + 0.53333vw) ; } }
     @media only screen and (max-width: 992px) {
       .history .history__text {
         margin-top: 30px; } }
   .history .history__title {
     font-size: inherit;
-    line-height: 1.2;
+    line-height: 1.25;
     letter-spacing: 3.3px;
     text-transform: uppercase; }
 
 .team {
   padding-bottom: 50px; }
+  .team .team__head {
+    text-align: center; }
   .team .team__foto-box {
     margin-top: 70px; }
   .team .team__foto-box .row {
@@ -7987,7 +7994,7 @@ li {
 .citation-section {
   padding-bottom: 50px;
   background-color: #0193cf;
-  background-image: url("../img/content/pattern-blue2.jpg"); }
+  background-image: url("../img/clean_textile_dark.png"); }
   .citation-section .citation {
     max-width: 759px;
     margin: 0 auto; }
@@ -8004,7 +8011,7 @@ li {
   .outpatient .outpatient__text {
     max-width: 966px;
     margin: 0 auto;
-    font-family: "futura-pt", sans-serif;
+    font-family: "eurostile-condensed", sans-serif;
     font-size: 21px;
     line-height: 1.17;
     letter-spacing: 0.2px;
@@ -8031,7 +8038,8 @@ li {
 .footer {
   font-size: 21px;
   color: #7095a1;
-  background-color: #003366; }
+  background-color: #003366;
+  background-image: url("../img/clean_textile_dark.png"); }
   @media (max-width: 1200px) {
     .footer {
       font-size: calc(15.4px + 0.46667vw) ; } }
@@ -8061,7 +8069,7 @@ li {
     padding-bottom: 80px;
     color: #5b6c72;
     background-color: #cedde2;
-    background-image: url("../img/content/pattern-light.jpg"); }
+    background-image: url("../img/clean_textile_light.png"); }
   .footer .top-nav__inner {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -8134,8 +8142,8 @@ li {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding-top: 12px;
-    padding-bottom: 29px; }
+    padding-top: 15px;
+    padding-bottom: 15px; }
   .footer .footer__bottom-nav {
     display: -webkit-box;
     display: -ms-flexbox;
