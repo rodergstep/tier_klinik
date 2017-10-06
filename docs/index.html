@@ -33,9 +33,13 @@
   <!-- Intellectual web font loader -->
   <script src="scripts/libs/fontfaceobserver.min.js"></script>
   <script>
-    var output = new FontFaceObserver('futura-pt');
-    output.load().then(function() {
+    var futura = new FontFaceObserver('futura-pt');
+    futura.load().then(function() {
       console.log('futura-pt font has loaded');
+    });
+    var eurostileCondensed = new FontFaceObserver('eurostile-condensed');
+    eurostileCondensed.load().then(function() {
+      console.log('eurostile-condensed font has loaded');
     });
   </script>
 
@@ -99,32 +103,38 @@
       <section class="slider">
         <div class="hero-slider">
           <div class="hero-slider__item">
-            <img src="img/dog1--1366.jpg" alt="Slider 1" class="hero-slider__pict">
+            <figure>
+              <img src="img/dog1--1366.jpg" alt="Slider 1" class="hero-slider__pict">
+            </figure>
             <div class="hero-slider__text">
               <div class="hero-slider__wraptext">
                 <div class="hero-slider__subtitle">Lorem ipsum dolor sit amet</div>
                 <h2 class="hero-slider__title">Lorem ipsum dolor sit amet</h2>
-                <a href="#" class="hero-slider__link">mehr erfahren</a>
+                <a href="#" class="hero-slider__link blue__link">mehr erfahren</a>
               </div>
             </div>
           </div>
           <div class="hero-slider__item">
-            <img src="img/dog1--1366.jpg" alt="Slider 1" class="hero-slider__pict">
+            <figure>
+              <img src="img/dog1--1366.jpg" alt="Slider 1" class="hero-slider__pict">
+            </figure>
             <div class="hero-slider__text">
               <div class="hero-slider__wraptext">
                 <div class="hero-slider__subtitle">Lorem ipsum dolor sit amet</div>
                 <h2 class="hero-slider__title">Lorem ipsum dolor sit amet</h2>
-                <a href="#" class="hero-slider__link">mehr erfahren</a>
+                <a href="#" class="hero-slider__link blue__link">mehr erfahren</a>
               </div>
             </div>
           </div>
           <div class="hero-slider__item">
-            <img src="img/dog1--1366.jpg" alt="Slider 1" class="hero-slider__pict">
+            <figure>
+              <img src="img/dog1--1366.jpg" alt="Slider 1" class="hero-slider__pict">
+            </figure>
             <div class="hero-slider__text">
               <div class="hero-slider__wraptext">
                 <div class="hero-slider__subtitle">Lorem ipsum dolor sit amet</div>
                 <h2 class="hero-slider__title">Lorem ipsum dolor sit amet</h2>
-                <a href="#" class="hero-slider__link">mehr erfahren</a>
+                <a href="#" class="hero-slider__link blue__link">mehr erfahren</a>
               </div>
             </div>
           </div>
