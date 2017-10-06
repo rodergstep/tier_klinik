@@ -7587,7 +7587,8 @@ li {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
-    padding-bottom: 20px; }
+    padding-bottom: 20px;
+    z-index: 100; }
   .header .header__nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -7747,7 +7748,7 @@ li {
   position: fixed;
   top: 0;
   right: -65px;
-  z-index: 100; }
+  z-index: 10; }
   .side-button-wrap .side-button {
     display: -webkit-box;
     display: -ms-flexbox;
