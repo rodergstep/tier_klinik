@@ -7879,10 +7879,8 @@ li {
 .icon-paw {
   display: inline-block;
   margin-bottom: 15px;
-  width: 24px;
-  height: 22px;
-  -webkit-transform: rotate(-25deg);
-          transform: rotate(-25deg); }
+  width: 23px;
+  height: 24px; }
 
 .citation {
   padding-top: 66px;
