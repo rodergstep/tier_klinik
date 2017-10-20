@@ -27,18 +27,22 @@
     } catch (e) {}
   </script>
   <!--  Styles  -->
-  <link rel="stylesheet" href="styles/magnific-popup.min.css">
-  <link rel="stylesheet" href="https://cdn.plyr.io/2.0.16/plyr.css">
+  <link rel="stylesheet" href="styles/slick.min.css" />
   <link rel="stylesheet" href="styles/index.processed.css">
 
   <!-- Intellectual web font loader -->
   <script src="scripts/libs/fontfaceobserver.min.js"></script>
   <script>
-    var output = new FontFaceObserver('futura-pt');
-    output.load().then(function() {
+    var futura = new FontFaceObserver('futura-pt');
+    futura.load().then(function() {
       console.log('futura-pt font has loaded');
     });
+    var eurostileCondensed = new FontFaceObserver('eurostile-condensed');
+    eurostileCondensed.load().then(function() {
+      console.log('eurostile-condensed font has loaded');
+    });
   </script>
+
 </head>
 
 <body>
@@ -95,70 +99,107 @@
         </div>
       </div>
     </header>
-
     <!-- MAIN -->
-    <main class="main content" role="main">
-      <!-- Content head -->
-      <section class="content-head">
-        <div class="section-container">
-          <div class="content-head__inner">
-            <h3 class="content__subtitle">Lorem ipsum dolor sit amet</h3>
-            <h1 class="content__title">Über Uns</h1>
-            <nav class="content-head__nav">
-              <a href="#history-section" class="content-head__nav-link">Geschichte</a>
-              <a href="#unser-section" class="content-head__nav-link">unser</a>
-              <a href="#research-section" class="content-head__nav-link">Forschung & Weiterbildung</a>
-              <a href="#outpatient-section" class="content-head__nav-link">Kuscheltierambulanz</a>
-            </nav>
-          </div>
-        </div>
-      </section>
-      <!-- Video -->
-      <section class="video-hero">
-        <a href="#modal__video-hero" class="video__play-button blue__link align-items-center popup-with-zoom-anim">
-          <img src="img/content/play-button.svg" alt="Play button" class="play-button">
-          <span>Video ansehen</span>
-        </a>
-        <!-- MODAL POPUP for video-hero -->
-        <div id="modal__video-hero" class="zoom-anim-dialog mfp-hide">
-          <div data-type="vimeo" data-video-id="143418951"></div>
-        </div>
-      </section>
-      <!-- Facts -->
-      <section class="facts">
-        <div class="section-container">
-          <div class="row">
-            <div class="col-xs-12 col-lg-6 col-xl-6">
-              <div class="row">
-                <div class="col-12">
-                  <img data-src="img/content/fact_1.jpg" alt="Picture" class="facts__picture">
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-xs-12 col-sm-6">
-                  <img data-src="img/content/fact_2.jpg" alt="Picture" class="facts__picture">
-                </div>
-                <div class="col-xs-12 col-sm-6">
-                  <img data-src="img/content/fact_3.jpg" alt="Picture" class="facts__picture">
-                </div>
-              </div>
-            </div>
-            <div class="col-xs-12 col-lg-6 col-xl-4">
-              <div class="citation">
-                <div class="citation__icon">
-                  <img data-src="img/content/paw.png" alt="Paw" class="icon-paw">
-                </div>
-                <h5 class="citation__title">FACTS</h5>
-                <p class="citation__text"><q>Im Laufe der Jahre ist die Tierklinik  zu einem modernen Diagnose - und Therapiezentrum der Region herangewachsen.</q></p>
-                <p class="citation__author">- Dr. Lehmann <br> Geschäftsführerin</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    <main class="main" role="main">
 
-      <!-- History -->
-      <section class="history" id="history-section">
+      <section class="slider">
+        <div class="hero-slider">
+          <div class="hero-slider__item">
+            <figure>
+              <img src="img/dog1--1366.jpg" alt="Slider 1" class="hero-slider__pict">
+            </figure>
+            <div class="hero-slider__text">
+              <div class="hero-slider__wraptext">
+                <div class="hero-slider__subtitle">Lorem ipsum dolor sit amet</div>
+                <h2 class="hero-slider__title">Lorem ipsum dolor sit amet</h2>
+                <a href="#" class="hero-slider__link blue__link">mehr erfahren</a>
+              </div>
+            </div>
+          </div>
+          <div class="hero-slider__item">
+            <figure>
+              <img src="img/dog1--1366.jpg" alt="Slider 1" class="hero-slider__pict">
+            </figure>
+            <div class="hero-slider__text">
+              <div class="hero-slider__wraptext">
+                <div class="hero-slider__subtitle">Lorem ipsum dolor sit amet</div>
+                <h2 class="hero-slider__title">Lorem ipsum dolor sit amet</h2>
+                <a href="#" class="hero-slider__link blue__link">mehr erfahren</a>
+              </div>
+            </div>
+          </div>
+          <div class="hero-slider__item">
+            <figure>
+              <img src="img/dog1--1366.jpg" alt="Slider 1" class="hero-slider__pict">
+            </figure>
+            <div class="hero-slider__text">
+              <div class="hero-slider__wraptext">
+                <div class="hero-slider__subtitle">Lorem ipsum dolor sit amet</div>
+                <h2 class="hero-slider__title">Lorem ipsum dolor sit amet</h2>
+                <a href="#" class="hero-slider__link blue__link">mehr erfahren</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="dark-bg">
+        <div class="section-container">
+          <div class="row justify-content-center">
+            <div class="col-xs-12 col-lg-7 col-xl-5">
+              <p class="notfall">Ob im Notfall oder zur klassischen Behandlung Ihres tierischen Lieblings, bei uns ist Ihr Tier in besten Händen. </p>
+              <button class="btn__transparent">Über die Tierklinik</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="light">
+        <div class="container">
+          <div class="row ">
+            <div class="col-12">
+              <h4 class="content__subtitle">Lorem ipsum dolor sit amet</h4>
+              <h2 class="content__title">Leistungen</h2>
+            </div>
+          </div>
+          <div class="cards__wrap row">
+            <div class="col-sm-6 col-lg-3">
+              <figure class="card__block">
+                <span class="card__icon-circle"><img data-src="img/icons/flower.png" alt="Profte"></span>
+                <figcaption class="card__caption">
+                  <span class="bold-text">Beste Qualität</span> <br> bei Diagnose und Behandlung
+                </figcaption>
+              </figure>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <figure class="card__block">
+                <span class="card__icon-circle"><img data-src="img/icons/cat.png" alt="Profte"></span>
+                <figcaption class="card__caption">
+                  <span class="bold-text"> Viel Zeit</span> <br>für die Betreuung Ihres Tieres
+                </figcaption>
+              </figure>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <figure class="card__block">
+                <span class="card__icon-circle"><img data-src="img/icons/woman.png" alt="Profte"></span>
+                <figcaption class="card__caption">
+                  <span class="bold-text">professionelles Team </span> <br> durch laufende Teilnahme an Seminaren und Schulungen
+                </figcaption>
+              </figure>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <figure class="card__block">
+                <span class="card__icon-circle"><img data-src="img/icons/clock.png" alt="Profte"></span>
+                <figcaption class="card__caption">
+                  <span class="bold-text">rund um die Uhr</span> <br>24 Stunden und 365 Tage <br> im Jahr ärztliche Betreuung
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="row">
+            <button class="btn__transparent">zur Angebotspalette</button>
+          </div>
+        </div>
+      </section>
+      <section class="light history light--small-pt">
         <div class="container">
           <div class="history__head raw">
             <h4 class="content__subtitle">Lorem ipsum dolor sit amet</h4>
@@ -166,201 +207,19 @@
           </div>
           <div class="row">
             <div class="history__img-box col-lg-7">
-              <img data-src="img/content/castle.jpg" alt="History" class="history__img">
+              <img data-src="img/dog-bottom.jpg" alt="Dog" class="history__img">
             </div>
             <article class="history__text col-lg-5">
               <h5 class="history__title">Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet.</h5>
               <p class="history__desc">
-                Im Februar 2002 wurde die Tierklinik Wiener Neustadt unter dem Namen „Tierambulatorium Wiener Neustadt“ gegründet. Von Anfang an wurde eine genaue Diagnostik mit speziellen Untersuchungsmöglichkeiten (Röntgen, Ultraschall, Endoskopie, gr. Labor) durchgeführt.</p>
-              <p class="history__desc">Im Laufe der Jahre ist die Tierklinik zu einem modernen Diagnose- und Therapiezentrum der Region herangewachsen. Durch ein Notfalldienstrad können wir Ihnen eine lückenlose Betreuung der Patienten über 24 Stunden bieten.</p>
+                Unser Team aus Spezialisten berät Sie kompetent und gemeinsam mit unserer modernen Ausstattung bekommt Ihr Tier beste medizinische Betreuung und Versorgung. Durch unser umfangreiches Fachwissen und die große Angebotspalette können auch seltene Erkrankungen
+                bzw. Spezialuntersuchungen und Operationen bei uns im Haus durchgeführt werden. Wir freuen uns, wenn Sie sich mit Ihrem Tier vertrauensvoll an uns wenden und stehen bei Fragen rund um die Uhr zur Verfügung!
+              </p>
             </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- unser -->
-      <section class="unser" id="unser-section">
-        <div class="unser__head section-container">
-          <h4 class="content__subtitle">Lorem ipsum dolor sit amet</h4>
-          <h2 class="content__title">Unser unser</h2>
-        </div>
-        <div class="unser__foto-box">
-          <div class="section-container">
-            <div class="row">
-              <div class="unser__foto">
-                <img data-src="#" alt="Foto">
-              </div>
-              <div class="unser__foto">
-                <img data-src="#" alt="Foto">
-              </div>
-              <div class="unser__foto">
-                <img data-src="#" alt="Foto">
-              </div>
-              <div class="unser__foto">
-                <img data-src="#" alt="Foto">
-              </div>
-              <div class="unser__foto">
-                <img data-src="#" alt="Foto">
-              </div>
-              <div class="unser__foto">
-                <img data-src="#" alt="Foto">
-              </div>
-              <div class="unser__foto">
-                <img data-src="#" alt="Foto">
-              </div>
-              <div class="unser__foto">
-                <img data-src="#" alt="Foto">
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Citation-section -->
-      <section class="citation-section">
-        <div class="section-container">
-          <div class="row">
-            <div class="citation">
-              <div class="citation__icon">
-                <img data-src="img/content/paw.png" alt="Paw" class="icon-paw">
-              </div>
-              <h5 class="citation__title">ZUSAMMENHALT</h5>
-              <p class="citation__text"><q>Lorem ipsum, dolor sit amet. Sirem kdoekf, difkeldh einholeng, vaharlo marahano mi hafana.</q></p>
-              <p class="citation__author">- Dr. Lehmann <br> Geschäftsführerin</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- History -->
-      <section class="history" id="research-section">
-        <div class="container">
-          <div class="history__head raw">
-            <h4 class="content__subtitle">Lorem ipsum dolor sit amet</h4>
-            <h2 class="content__title">Forschung und Weiterbildung</h2>
-          </div>
-          <div class="row">
-            <div class="history__img-box col-lg-7">
-              <img data-src="img/content/castle.jpg" alt="History" class="history__img">
-            </div>
-            <article class="history__text col-lg-5">
-              <h5 class="history__title">Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet.</h5>
-              <p class="history__desc">
-                Im Februar 2002 wurde die Tierklinik Wiener Neustadt unter dem Namen „Tierambulatorium Wiener Neustadt“ gegründet. Von Anfang an wurde eine genaue Diagnostik mit speziellen Untersuchungsmöglichkeiten (Röntgen, Ultraschall, Endoskopie, gr. Labor) durchgeführt.</p>
-              <p class="history__desc">Im Laufe der Jahre ist die Tierklinik zu einem modernen Diagnose- und Therapiezentrum der Region herangewachsen. Durch ein Notfalldienstrad können wir Ihnen eine lückenlose Betreuung der Patienten über 24 Stunden bieten.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- Outpatient -->
-      <section class="outpatient" id="outpatient-section">
-        <div class="section-container">
-          <div class="outpatient__head">
-            <h4 class="content__subtitle">Lorem ipsum dolor sit amet</h4>
-            <h2 class="content__title">Kuscheltierambulanz</h2>
-          </div>
-          <div class="row">
-            <article class="outpatient__text">
-              <h5 class="outpatient__title">Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet.</h5>
-              <p class="outpatient__paragraph">Im Februar 2002 wurde die Tierklinik Wiener Neustadt unter dem Namen „Tierambulatorium Wiener Neustadt“ gegründet. Von Anfang an wurde eine genaue Diagnostik mit speziellen Untersuchungsmöglichkeiten (Röntgen, Ultraschall, Endoskopie, gr.
-                Labor) durchgeführt.</p>
-              <p class="outpatient__paragraph">Im Laufe der Jahre ist die Tierklinik zu einem modernen Diagnose- und Therapiezentrum der Region herangewachsen. Durch ein Notfalldienstrad können wir Ihnen eine lückenlose Betreuung der Patienten über 24 Stunden bieten.</p>
-            </article>
-          </div>
-          <div class="outpatient__images-box row">
-            <div class="outpatient__image-wrap">
-              <img data-src="img/content/dog_1.jpg" alt="Dog patient" class="outpatient__image">
-            </div>
-            <div class="outpatient__image-wrap">
-              <img data-src="img/content/dog_2.jpg" alt="Dog patient" class="outpatient__image">
-            </div>
           </div>
         </div>
       </section>
     </main>
-    <!-- Footer -->
-    <footer class="footer">
-      <section class="footer__top-nav">
-        <div class="top-nav__inner section-container">
-          <div class="top-nav__column">
-            <h5 class="top-nav__title">Über Uns</h5>
-            <ul class="top-nav__list">
-              <li class="top-nav__item">
-                <a href="#" class="top-nav__link">Geschichte</a>
-              </li>
-              <li class="top-nav__item">
-                <a href="#" class="top-nav__link">unser</a>
-              </li>
-              <li class="top-nav__item">
-                <a href="#" class="top-nav__link">Forschung & Weiterentwicklung</a>
-              </li>
-              <li class="top-nav__item">
-                <a href="#" class="top-nav__link">Kuscheltierambulanz</a>
-              </li>
-            </ul>
-          </div>
-          <div class="top-nav__column">
-            <h5 class="top-nav__title">Leitbild</h5>
-            <ul class="top-nav__list">
-              <li class="top-nav__item">
-                <a href="#" class="top-nav__link">Lorem ipsum</a>
-              </li>
-              <li class="top-nav__item">
-                <a href="#" class="top-nav__link">Lorem</a>
-              </li>
-              <li class="top-nav__item">
-                <a href="#" class="top-nav__link">Dolor sit</a>
-              </li>
-              <li class="top-nav__item">
-                <a href="#" class="top-nav__link">Amet dolorim</a>
-              </li>
-            </ul>
-          </div>
-          <div class="top-nav__column">
-            <h5 class="top-nav__title">Leistungen</h5>
-            <ul class="top-nav__list">
-              <li class="top-nav__item">
-                <a href="#" class="top-nav__link">Lorem ipsum</a>
-              </li>
-              <li class="top-nav__item">
-                <a href="#" class="top-nav__link">Lorem</a>
-              </li>
-              <li class="top-nav__item">
-                <a href="#" class="top-nav__link">Dolor sit</a>
-              </li>
-              <li class="top-nav__item">
-                <a href="#" class="top-nav__link">Amet dolorim</a>
-              </li>
-            </ul>
-          </div>
-          <div class="top-nav__column top-nav__column--last">
-            <h3 class="top-nav__logo">
-              <img data-src="img/logo.svg" alt="Tier klinik">
-            </h3>
-            <div class="top-nav__contact">
-              <p class="top-nav__tel">
-                <span>24 h Notdienst:</span>
-                <span>0699 1 2622 500</span>
-              </p>
-              <p class="top-nav__schedule">
-                <span>Öffnungszeiten:</span>
-                <span>Mo-Fr 9 bis19 Uhr</span>
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <div class="section-container">
-        <div class="footer__bottom-inner row align-items-center">
-          <nav class="footer__bottom-nav">
-            <a href="#" class="bottom-nav__link">Kontakt</a>
-            <a href="#" class="bottom-nav__link">Impressum</a>
-            <a href="#" class="bottom-nav_link">Disclaimer</a>
-          </nav>
-          <div class="footer__copy">© Tierklinik Wiener Neustadt</div>
-        </div>
-      </div>
-    </footer>
 
     <div class="side-button-wrap align-items-center">
       <a href="#" class="side-button align-items-center">
@@ -369,6 +228,91 @@
       </a>
     </div>
   </div>
+  <!-- footer -->
+
+  <footer class="footer">
+    <section class="footer__top-nav">
+      <div class="top-nav__inner section-container">
+        <div class="top-nav__column">
+          <h5 class="top-nav__title">Über Uns</h5>
+          <ul class="top-nav__list">
+            <li class="top-nav__item">
+              <a href="#" class="top-nav__link">Geschichte</a>
+            </li>
+            <li class="top-nav__item">
+              <a href="#" class="top-nav__link">Team</a>
+            </li>
+            <li class="top-nav__item">
+              <a href="#" class="top-nav__link">Forschung & Weiterentwicklung</a>
+            </li>
+            <li class="top-nav__item">
+              <a href="#" class="top-nav__link">Kuscheltierambulanz</a>
+            </li>
+          </ul>
+        </div>
+        <div class="top-nav__column">
+          <h5 class="top-nav__title">Leitbild</h5>
+          <ul class="top-nav__list">
+            <li class="top-nav__item">
+              <a href="#" class="top-nav__link">Lorem ipsum</a>
+            </li>
+            <li class="top-nav__item">
+              <a href="#" class="top-nav__link">Lorem</a>
+            </li>
+            <li class="top-nav__item">
+              <a href="#" class="top-nav__link">Dolor sit</a>
+            </li>
+            <li class="top-nav__item">
+              <a href="#" class="top-nav__link">Amet dolorim</a>
+            </li>
+          </ul>
+        </div>
+        <div class="top-nav__column">
+          <h5 class="top-nav__title">Leistungen</h5>
+          <ul class="top-nav__list">
+            <li class="top-nav__item">
+              <a href="#" class="top-nav__link">Lorem ipsum</a>
+            </li>
+            <li class="top-nav__item">
+              <a href="#" class="top-nav__link">Lorem</a>
+            </li>
+            <li class="top-nav__item">
+              <a href="#" class="top-nav__link">Dolor sit</a>
+            </li>
+            <li class="top-nav__item">
+              <a href="#" class="top-nav__link">Amet dolorim</a>
+            </li>
+          </ul>
+        </div>
+        <div class="top-nav__column top-nav__column--last">
+          <h3 class="top-nav__logo">
+            <img data-src="img/logo.svg" alt="Tier klinik">
+          </h3>
+          <div class="top-nav__contact">
+            <p class="top-nav__tel">
+              <span>24 h Notdienst:</span>
+              <span>0699 1 2622 500</span>
+            </p>
+            <p class="top-nav__schedule">
+              <span>Öffnungszeiten:</span>
+              <span>Mo-Fr 9 bis19 Uhr</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="section-container">
+      <div class="footer__bottom-inner row align-items-center">
+        <nav class="footer__bottom-nav">
+          <a href="#" class="bottom-nav__link">Kontakt</a>
+          <a href="#" class="bottom-nav__link">Impressum</a>
+          <a href="#" class="bottom-nav_link">Disclaimer</a>
+        </nav>
+        <div class="footer__copy">© Tierklinik Wiener Neustadt</div>
+      </div>
+    </div>
+  </footer>
+
 
   <!-- Scripts -->
   <script>
@@ -378,11 +322,7 @@
   </script>
   <script async src="scripts/libs/lazyload.min.js"></script>
   <script type="text/javascript" src="scripts/libs/jquery-1.12.0.min.js"></script>
-  <script type="text/javascript" src="scripts/libs/magnific-popup.min.js"></script>
-  <script src="https://cdn.plyr.io/2.0.16/plyr.js"></script>
-  <script>
-    plyr.setup();
-  </script>
+  <script type="text/javascript" src="scripts/libs/slick.min.js"></script>
   <script src="scripts/index.min.js"></script>
 
 </body>
