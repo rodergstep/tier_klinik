@@ -72,16 +72,13 @@
 
             <ul class="header__nav">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Über uns</a>
+                <a class="nav-link" href="content.html">Über uns</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="team.html">Team</a>
               </li>
               <li class="nav-item active">
                 <a class="nav-link" href="klinik.html">Klinik</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="content.html">Im Notfall</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="dos.html">Do’s and Don’ts</a>
@@ -109,6 +106,19 @@
               <a href="#section3" class="content-head__nav-link">Ausstattung & Behandlungsformen</a>
             </nav>
           </div>
+        </div>
+      </section>
+      <!-- next section-->
+      <section class="section__masonry">
+        <div class="masonry__row">
+          <div class="masonry__item masonry__item--1"><img data-src="img/klinik-masonry-1.jpg" alt="Tier Klinik"></div>
+          <div class="masonry__item masonry__item--2"><img data-src="img/klinik-masonry-2.jpg" alt="Tier Klinik"></div>
+          <div class="masonry__item masonry__item--3"><img data-src="img/klinik-masonry-3.jpg" alt="Tier Klinik"></div>
+        </div>
+        <div class="masonry__row">
+          <div class="masonry__item masonry__item--4"><img data-src="img/klinik-masonry-4.jpg" alt="Tier Klinik"></div>
+          <div class="masonry__item masonry__item--5"><img data-src="img/klinik-masonry-5.jpg" alt="Tier Klinik"></div>
+          <div class="masonry__item masonry__item--6"><img data-src="img/klinik-masonry-6.jpg" alt="Tier Klinik"></div>
         </div>
       </section>
       <!-- next section-->
@@ -173,7 +183,7 @@
                         <span class="icon icon-plus"></span>
                         <span class="icon icon-minus"></span>
                       </button>
-                      <span class="table__icon"><img data-src="img/icons/kennzeichnung.png" alt="Icon"></span>
+                      <span class="table__icon"><img data-src="img/icons/kennzeichnung.svg" alt="Icon"></span>
                     </div>
                   </div>
                   <div class="col-lg-8 table__text">
@@ -189,7 +199,7 @@
                           <span class="icon icon-plus"></span>
                           <span class="icon icon-minus"></span>
                       </button>
-                      <span class="table__icon"><img data-src="img/icons/elektronisch.png" alt="Icon"></span></div>
+                      <span class="table__icon"><img data-src="img/icons/elektronisch.svg" alt="Icon"></span></div>
                   </div>
                   <div class="col-lg-8 table__text">
                     <h5 class="table__row-title">Elektronische Kennzeichnung</h5>
@@ -208,7 +218,7 @@
                           <span class="icon icon-plus"></span>
                           <span class="icon icon-minus"></span>
                       </button>
-                      <span class="table__icon"><img data-src="img/icons/impfen.png" alt="Icon"></span>
+                      <span class="table__icon"><img data-src="img/icons/impfen.svg" alt="Icon"></span>
                     </div>
                   </div>
                   <div class="col-lg-8 table__text">
@@ -224,7 +234,7 @@
                           <span class="icon icon-plus"></span>
                           <span class="icon icon-minus"></span>
                       </button>
-                      <span class="table__icon"><img data-src="img/icons/entwurmen.png" alt="Icon"></span>
+                      <span class="table__icon"><img data-src="img/icons/entwurmen.svg" alt="Icon"></span>
                     </div>
                   </div>
                   <div class="col-lg-8 table__text">
@@ -239,7 +249,7 @@
                           <span class="icon icon-plus"></span>
                           <span class="icon icon-minus"></span>
                       </button>
-                      <span class="table__icon"><img data-src="img/icons/zeck.png" alt="Icon"></span>
+                      <span class="table__icon"><img data-src="img/icons/zeck.svg" alt="Icon"></span>
                     </div>
                   </div>
                   <div class="col-lg-8 table__text">
@@ -259,125 +269,149 @@
           <h4 class="content__subtitle">Lorem ipsum dolor sit amet</h4>
           <h2 class="content__title">Ausstattung & Behandlungsformen</h2>
         </div>
-        <div class="row slider-section justify-content-center">
-          <div class="klinik__img-box col-sm-10 col-md-8 col-xl-6">
-            <img data-src="img/klinik4.jpg" alt="Klinik" class="klinik__img">
+        <!-- slider -->
+        <div class="slider-section" id="klinikSlider">
+          <div class="klinik__slide">
+            <div class="klinik__slide-inner">
+              <div class="klinik__img-box">
+                <img data-src="img/klinik4.jpg" alt="Klinik" class="klinik__img">
+              </div>
+              <div class="klinik__text">
+                <div class="klinik__text-inner">
+                  <h5 class="content__subtitle">Ambulanzräume</h5>
+                  <p class="klinik__paragraph">Während der Ambulanzzeiten arbeiten wir parallel in <span class="bold-text">zwei Ambulanzräumen</span> , um die Wartezeiten möglichst kurz zu halten. Unsere Ambulanz 2 ist gleichzeitig ein voll eingerichteter <span class="bold-text">Augenuntersuchungsraum</span>                    Wir führen Untersuchungen der Augen, der Augenumgebung und der Lider durch. Auch Ultraschalluntersuchungen der Augen helfen uns bei der Diagnose. Therapeutisch bieten wir Augenchirurgie und Lidkorrekturen durch.</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-sm-10 col-md-8 col-xl-6">
-            <div class="klinik__slider" id="klinikSlider">
-              <div class="klinik__slide">
-                <h5 class="content__subtitle">Ambulanzräume</h5>
-                <p class="klinik__paragraph">Während der Ambulanzzeiten arbeiten wir parallel in <span class="bold-text">zwei Ambulanzräumen</span> , um die Wartezeiten möglichst kurz zu halten. Unsere Ambulanz 2 ist gleichzeitig ein voll eingerichteter <span class="bold-text">Augenuntersuchungsraum</span>.
-                  Wir führen Untersuchungen der Augen, der Augenumgebung und der Lider durch. Auch Ultraschalluntersuchungen der Augen helfen uns bei der Diagnose. Therapeutisch bieten wir Augenchirurgie und Lidkorrekturen durch.</p>
+          <!-- next slide -->
+          <div class="klinik__slide">
+            <div class="klinik__slide-inner">
+              <div class="klinik__img-box">
+                <img data-src="img/klinik4.jpg" alt="Klinik" class="klinik__img">
               </div>
-              <div class="klinik__slide">
-                <h5 class="content__subtitle">Ambulanzräume</h5>
-                <p class="klinik__paragraph">Während der Ambulanzzeiten arbeiten wir parallel in zwei Ambulanzräumen, um die Wartezeiten möglichst kurz zu halten. Unsere Ambulanz 2 ist gleichzeitig ein voll eingerichteter Augenuntersuchungsraum. Wir führen Untersuchungen der Augen,
-                  der Augenumgebung und der Lider durch. Auch Ultraschalluntersuchungen der Augen helfen uns bei der Diagnose. Therapeutisch bieten wir Augenchirurgie und Lidkorrekturen durch.</p>
+              <div class="klinik__text">
+                <div class="klinik__text-inner">
+                  <h5 class="content__subtitle">Ambulanzräume</h5>
+                  <p class="klinik__paragraph">Während der Ambulanzzeiten arbeiten wir parallel in zwei Ambulanzräumen, um die Wartezeiten möglichst kurz zu halten. Unsere Ambulanz 2 ist gleichzeitig ein voll eingerichteter Augenuntersuchungsraum. Wir führen Untersuchungen der Augen,
+                    der Augenumgebung und der Lider durch. Auch Ultraschalluntersuchungen der Augen helfen uns bei der Diagnose. Therapeutisch bieten wir Augenchirurgie und Lidkorrekturen durch.</p>
+                </div>
               </div>
-              <div class="klinik__slide">
-                <h5 class="content__subtitle">Ambulanzräume</h5>
-                <p class="klinik__paragraph">Während der Ambulanzzeiten arbeiten wir parallel in zwei Ambulanzräumen, um die Wartezeiten möglichst kurz zu halten. Unsere Ambulanz 2 ist gleichzeitig ein voll eingerichteter Augenuntersuchungsraum. Wir führen Untersuchungen der Augen,
-                  der Augenumgebung und der Lider durch. Auch Ultraschalluntersuchungen der Augen helfen uns bei der Diagnose. Therapeutisch bieten wir Augenchirurgie und Lidkorrekturen durch.</p>
+            </div>
+          </div>
+          <!-- next slide -->
+          <div class="klinik__slide">
+            <div class="klinik__slide-inner">
+              <div class="klinik__img-box">
+                <img data-src="img/klinik4.jpg" alt="Klinik" class="klinik__img">
+              </div>
+              <div class="klinik__text">
+                <div class="klinik__text-inner">
+                  <h5 class="content__subtitle">Ambulanzräume</h5>
+                  <p class="klinik__paragraph">Während der Ambulanzzeiten arbeiten wir parallel in zwei Ambulanzräumen, um die Wartezeiten möglichst kurz zu halten. Unsere Ambulanz 2 ist gleichzeitig ein voll eingerichteter Augenuntersuchungsraum. Wir führen Untersuchungen der Augen,
+                    der Augenumgebung und der Lider durch. Auch Ultraschalluntersuchungen der Augen helfen uns bei der Diagnose. Therapeutisch bieten wir Augenchirurgie und Lidkorrekturen durch.</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+  </div>
+  </div>
+  </section>
 
 
-    </main>
+  </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <section class="footer__top-nav">
-        <div class="top-nav__inner section-container">
-          <div class="top-nav__column">
-            <h5 class="top-nav__title">Über Uns</h5>
-            <ul class="top-nav__list">
-              <li class="top-nav__item">
-                <a href="#" class="top-nav__link">Geschichte</a>
-              </li>
-              <li class="top-nav__item">
-                <a href="#" class="top-nav__link">unser</a>
-              </li>
-              <li class="top-nav__item">
-                <a href="#" class="top-nav__link">Forschung & Weiterentwicklung</a>
-              </li>
-              <li class="top-nav__item">
-                <a href="#" class="top-nav__link">Kuscheltierambulanz</a>
-              </li>
-            </ul>
-          </div>
-          <div class="top-nav__column">
-            <h5 class="top-nav__title">Leitbild</h5>
-            <ul class="top-nav__list">
-              <li class="top-nav__item">
-                <a href="#" class="top-nav__link">Lorem ipsum</a>
-              </li>
-              <li class="top-nav__item">
-                <a href="#" class="top-nav__link">Lorem</a>
-              </li>
-              <li class="top-nav__item">
-                <a href="#" class="top-nav__link">Dolor sit</a>
-              </li>
-              <li class="top-nav__item">
-                <a href="#" class="top-nav__link">Amet dolorim</a>
-              </li>
-            </ul>
-          </div>
-          <div class="top-nav__column">
-            <h5 class="top-nav__title">Leistungen</h5>
-            <ul class="top-nav__list">
-              <li class="top-nav__item">
-                <a href="#" class="top-nav__link">Lorem ipsum</a>
-              </li>
-              <li class="top-nav__item">
-                <a href="#" class="top-nav__link">Lorem</a>
-              </li>
-              <li class="top-nav__item">
-                <a href="#" class="top-nav__link">Dolor sit</a>
-              </li>
-              <li class="top-nav__item">
-                <a href="#" class="top-nav__link">Amet dolorim</a>
-              </li>
-            </ul>
-          </div>
-          <div class="top-nav__column top-nav__column--last">
-            <h3 class="top-nav__logo">
-              <img data-src="img/logo.svg" alt="Tier klinik">
-            </h3>
-            <div class="top-nav__contact">
-              <p class="top-nav__tel">
-                <span>24 h Notdienst:</span>
-                <span>0699 1 2622 500</span>
-              </p>
-              <p class="top-nav__schedule">
-                <span>Öffnungszeiten:</span>
-                <span>Mo-Fr 9 bis19 Uhr</span>
-              </p>
-            </div>
-          </div>
+  <!-- Footer -->
+  <footer class="footer">
+    <section class="footer__top-nav">
+      <div class="top-nav__inner section-container">
+        <div class="top-nav__column">
+          <h5 class="top-nav__title">Über Uns</h5>
+          <ul class="top-nav__list">
+            <li class="top-nav__item">
+              <a href="#" class="top-nav__link">Geschichte</a>
+            </li>
+            <li class="top-nav__item">
+              <a href="#" class="top-nav__link">unser</a>
+            </li>
+            <li class="top-nav__item">
+              <a href="#" class="top-nav__link">Forschung & Weiterentwicklung</a>
+            </li>
+            <li class="top-nav__item">
+              <a href="#" class="top-nav__link">Kuscheltierambulanz</a>
+            </li>
+          </ul>
         </div>
-      </section>
-      <div class="section-container">
-        <div class="footer__bottom-inner row align-items-center">
-          <nav class="footer__bottom-nav">
-            <a href="#" class="bottom-nav__link">Kontakt</a>
-            <a href="#" class="bottom-nav__link">Impressum</a>
-            <a href="#" class="bottom-nav_link">Disclaimer</a>
-          </nav>
-          <div class="footer__copy">© Tierklinik Wiener Neustadt</div>
+        <div class="top-nav__column">
+          <h5 class="top-nav__title">Leitbild</h5>
+          <ul class="top-nav__list">
+            <li class="top-nav__item">
+              <a href="#" class="top-nav__link">Lorem ipsum</a>
+            </li>
+            <li class="top-nav__item">
+              <a href="#" class="top-nav__link">Lorem</a>
+            </li>
+            <li class="top-nav__item">
+              <a href="#" class="top-nav__link">Dolor sit</a>
+            </li>
+            <li class="top-nav__item">
+              <a href="#" class="top-nav__link">Amet dolorim</a>
+            </li>
+          </ul>
+        </div>
+        <div class="top-nav__column">
+          <h5 class="top-nav__title">Leistungen</h5>
+          <ul class="top-nav__list">
+            <li class="top-nav__item">
+              <a href="#" class="top-nav__link">Lorem ipsum</a>
+            </li>
+            <li class="top-nav__item">
+              <a href="#" class="top-nav__link">Lorem</a>
+            </li>
+            <li class="top-nav__item">
+              <a href="#" class="top-nav__link">Dolor sit</a>
+            </li>
+            <li class="top-nav__item">
+              <a href="#" class="top-nav__link">Amet dolorim</a>
+            </li>
+          </ul>
+        </div>
+        <div class="top-nav__column top-nav__column--last">
+          <h3 class="top-nav__logo">
+            <img data-src="img/logo.svg" alt="Tier klinik">
+          </h3>
+          <div class="top-nav__contact">
+            <p class="top-nav__tel">
+              <span>24 h Notdienst:</span>
+              <span>0699 1 2622 500</span>
+            </p>
+            <p class="top-nav__schedule">
+              <span>Öffnungszeiten:</span>
+              <span>Mo-Fr 9 bis19 Uhr</span>
+            </p>
+          </div>
         </div>
       </div>
-    </footer>
-
-    <div class="side-button-wrap align-items-center">
-      <a href="#" class="side-button align-items-center">
-        <img data-src="img/plus.svg" alt="Plus icon" class="side-button__plus">
-        <span>Notfall?</span>
-      </a>
+    </section>
+    <div class="section-container">
+      <div class="footer__bottom-inner row align-items-center">
+        <nav class="footer__bottom-nav">
+          <a href="#" class="bottom-nav__link">Kontakt</a>
+          <a href="#" class="bottom-nav__link">Impressum</a>
+          <a href="#" class="bottom-nav_link">Disclaimer</a>
+        </nav>
+        <div class="footer__copy">© Tierklinik Wiener Neustadt</div>
+      </div>
     </div>
+  </footer>
+
+  <div class="side-button-wrap align-items-center">
+    <a href="#" class="side-button align-items-center">
+      <img data-src="img/plus.svg" alt="Plus icon" class="side-button__plus">
+      <span>Notfall?</span>
+    </a>
+  </div>
   </div>
 
   <!-- Scripts -->
