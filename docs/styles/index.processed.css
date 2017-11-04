@@ -8182,11 +8182,13 @@ li {
 .team .gallery__photo {
   background-color: #fff;
   border-top-right-radius: 40px;
-  border-top-left-radius: 40px; }
+  border-top-left-radius: 40px;
+  overflow: hidden; }
   .team .gallery__photo img {
-    border-top-right-radius: 40px;
-    border-top-left-radius: 40px;
     width: 100%; }
+
+.team .gallery__photo--bdr {
+  border-radius: 40px; }
 
 .team .gallery__text {
   padding: 0 20px 0 25px;
@@ -8286,6 +8288,9 @@ li {
 .dos .content-head__inner {
   padding-bottom: 0px; }
 
+.dos .row-mt {
+  margin-top: 80px; }
+
 .dos .dos__desc {
   padding-top: 78px;
   padding-bottom: 101px;
@@ -8301,18 +8306,28 @@ li {
 .dos .dos__desc-inner {
   margin: 0 auto; }
 
+.dos .desc__title-icon {
+  width: 54px;
+  height: 54px;
+  margin: 0 auto;
+  margin-bottom: 30px; }
+
 .dos .desc__title {
   margin-bottom: 30px;
   font-size: 22px;
   font-family: "eurostile-condensed", sans-serif;
+  color: #0397d9;
   text-align: center;
-  font-weight: 900; }
+  font-weight: 700; }
   @media (max-width: 1200px) {
     .dos .desc__title {
       font-size: calc(15.6px + 0.53333vw) ; } }
 
+.dos .desc__title--orange {
+  color: #ff6f3a; }
+
 .dos .desc__list {
-  margin-bottom: 40px; }
+  margin-bottom: 20px; }
 
 .dos .desc__list-item .disc {
   display: inline-block;
