@@ -8542,6 +8542,10 @@ li {
               align-items: center;
       padding-top: 80px; } }
 
+.klinik .klinik__slider {
+  margin: 0 auto;
+  max-width: 1600px; }
+
 .klinik .klinik__img-box img {
   width: 100%; }
 
