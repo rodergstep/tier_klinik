@@ -7875,22 +7875,46 @@ li {
         font-size: calc(15.2px + 0.4vw) ; } }
 
 .side-button-wrap {
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: fixed;
   top: 0;
-  right: -65px;
-  z-index: 10; }
+  bottom: 0;
+  right: -380px;
+  height: 159px;
+  margin: auto;
+  z-index: 100;
+  -webkit-transition: right 0.6s ease;
+  transition: right 0.6s ease; }
+  @media only screen and (max-width: 480px) {
+    .side-button-wrap {
+      right: -320px; } }
+  @media only screen and (max-height: 771px) {
+    .side-button-wrap {
+      position: absolute; } }
+  .side-button-wrap:hover {
+    height: auto;
+    right: 0; }
+    .side-button-wrap:hover .side-button {
+      -webkit-box-shadow: none;
+              box-shadow: none; }
   .side-button-wrap .side-button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 0.8em 1.7em 0.7em 1em;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 159px;
+    height: 51px;
+    margin-right: -56px;
     font-family: "eurostile-condensed", sans-serif;
     font-size: 20px;
-    font-weight: 900;
+    font-weight: 700;
     letter-spacing: 2px;
     line-height: 1;
     text-transform: uppercase;
@@ -7898,19 +7922,94 @@ li {
     -webkit-box-shadow: 0 0 13px 0 #5b6c72;
             box-shadow: 0 0 13px 0 #5b6c72;
     border: solid 2px #fff;
+    border-bottom: none;
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg); }
     @media (max-width: 1200px) {
       .side-button-wrap .side-button {
         font-size: calc(15.2px + 0.4vw) ; } }
-    .side-button-wrap .side-button:hover {
-      background-color: #ff642b; }
+    @media only screen and (max-width: 480px) {
+      .side-button-wrap .side-button {
+        width: 127.2px;
+        height: 40.8px;
+        margin-right: -44.8px; } }
   .side-button-wrap .side-button__plus {
     width: 16px;
     height: 16px;
     margin-right: 10px; }
   .side-button-wrap span {
     color: #fff; }
+  .side-button-wrap .side-button__panel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 380px;
+    padding: 1.6em;
+    font-size: 22px;
+    color: #fff;
+    border: solid 2px #fff;
+    background-color: #ff6f3a; }
+    @media (max-width: 1200px) {
+      .side-button-wrap .side-button__panel {
+        font-size: calc(15.6px + 0.53333vw) ; } }
+    @media only screen and (max-width: 480px) {
+      .side-button-wrap .side-button__panel {
+        width: 320px; } }
+  .side-button-wrap .panel__title {
+    text-transform: uppercase;
+    font-family: "futura-pt", sans-serif;
+    font-size: inherit;
+    font-weight: 900;
+    line-height: 1.2;
+    letter-spacing: 3.3px; }
+  .side-button-wrap .panel__paragraph {
+    margin-top: 5px;
+    margin-bottom: 1em;
+    font-family: "eurostile-condensed", sans-serif;
+    line-height: 1.09;
+    letter-spacing: 0.2px;
+    text-align: left; }
+  .side-button-wrap .panel__btn {
+    width: 13em;
+    margin-top: 0.5em;
+    -ms-flex-item-align: center;
+        align-self: center;
+    padding: 0.25em 1.4em;
+    font-size: 20px;
+    letter-spacing: 0px;
+    line-height: 1.26;
+    text-align: center;
+    border-radius: 30px; }
+    @media (max-width: 1200px) {
+      .side-button-wrap .panel__btn {
+        font-size: calc(15.2px + 0.4vw) ; } }
+    @media only screen and (max-width: 480px) {
+      .side-button-wrap .panel__btn {
+        margin-top: 0.25em; } }
+    .side-button-wrap .panel__btn .bold-text {
+      font-size: 22px; }
+      @media (max-width: 1200px) {
+        .side-button-wrap .panel__btn .bold-text {
+          font-size: calc(15.6px + 0.53333vw) ; } }
+  .side-button-wrap .panel__schedule {
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    border: none; }
+    @media only screen and (max-width: 480px) {
+      .side-button-wrap .panel__schedule {
+        margin-top: 0.75em;
+        margin-bottom: 0.5em; } }
+    .side-button-wrap .panel__schedule:hover {
+      background-color: inherit; }
+  .side-button-wrap .panel__separator {
+    width: 100%;
+    height: 2px;
+    margin-bottom: 1em;
+    background-color: white; }
 
 .content-head {
   -webkit-box-shadow: inset 0px 5px 13px 0px rgba(91, 108, 114, 0.2);
