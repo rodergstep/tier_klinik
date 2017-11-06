@@ -102,7 +102,10 @@
         </div>
       </section>
       <!-- next section -->
-      <div class="kontakt"></div>
+      <div class="contact__map">
+        <div id="map"></div>
+
+      </div>
     </main>
     <!-- Footer -->
     <footer class="footer">
@@ -213,6 +216,208 @@
   </script>
   <script async src="scripts/libs/lazyload.min.js"></script>
   <script type="text/javascript" src="scripts/libs/jquery-1.12.0.min.js"></script>
+  <!-- map -->
+  <!-- <script>
+    function initMap() {
+      // Create a map object and specify the DOM element for display.
+      var map = new google.maps.Map(document.getElementById('map'), {
+        center: {
+          lat: 47.8176217,
+          lng: 16.2469351,
+        },
+        zoom: 15
+      });
+    }
+  </script> -->
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&callback=initMap" async defer></script>
+
+  <script type="text/javascript">
+    // When the window has finished loading create our google map below
+    google.maps.event.addDomListener(window, 'load', initMap);
+
+    function initMap() {
+      // Basic options for a simple Google Map
+      // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+      var mapOptions = {
+        // How zoomed in you want the map to start at (always required)
+        zoom: 15,
+
+        // The latitude and longitude to center the map (always required)
+        center: new google.maps.LatLng(47.8176217, 16.2469351),
+        styles: [{
+          "featureType": "administrative.locality",
+          "elementType": "all",
+          "stylers": [{
+            "hue": "#0049ff"
+          }, {
+            "saturation": 7
+          }, {
+            "lightness": 19
+          }, {
+            "visibility": "on"
+          }]
+        }, {
+          "featureType": "administrative.locality",
+          "elementType": "labels.text",
+          "stylers": [{
+            "visibility": "on"
+          }]
+        }, {
+          "featureType": "administrative.neighborhood",
+          "elementType": "labels.text",
+          "stylers": [{
+            "visibility": "on"
+          }, {
+            "hue": "#0018ff"
+          }, {
+            "saturation": "-16"
+          }, {
+            "lightness": "37"
+          }]
+        }, {
+          "featureType": "landscape",
+          "elementType": "all",
+          "stylers": [{
+            "hue": "#ffffff"
+          }, {
+            "saturation": -100
+          }, {
+            "lightness": 100
+          }, {
+            "visibility": "simplified"
+          }]
+        }, {
+          "featureType": "poi",
+          "elementType": "all",
+          "stylers": [{
+            "hue": "#ffffff"
+          }, {
+            "saturation": -100
+          }, {
+            "lightness": 100
+          }, {
+            "visibility": "off"
+          }]
+        }, {
+          "featureType": "poi",
+          "elementType": "geometry.fill",
+          "stylers": [{
+            "visibility": "on"
+          }, {
+            "color": "#f9f9f9"
+          }]
+        }, {
+          "featureType": "poi",
+          "elementType": "labels.text",
+          "stylers": [{
+            "visibility": "off"
+          }]
+        }, {
+          "featureType": "road",
+          "elementType": "geometry",
+          "stylers": [{
+            "hue": "#bbc0c4"
+          }, {
+            "saturation": -93
+          }, {
+            "lightness": 31
+          }, {
+            "visibility": "simplified"
+          }]
+        }, {
+          "featureType": "road",
+          "elementType": "labels",
+          "stylers": [{
+            "hue": "#bbc0c4"
+          }, {
+            "saturation": -93
+          }, {
+            "lightness": 31
+          }, {
+            "visibility": "on"
+          }]
+        }, {
+          "featureType": "road.arterial",
+          "elementType": "labels",
+          "stylers": [{
+            "hue": "#bbc0c4"
+          }, {
+            "saturation": -93
+          }, {
+            "lightness": -2
+          }, {
+            "visibility": "simplified"
+          }]
+        }, {
+          "featureType": "road.local",
+          "elementType": "geometry",
+          "stylers": [{
+            "hue": "#e9ebed"
+          }, {
+            "saturation": -90
+          }, {
+            "lightness": -8
+          }, {
+            "visibility": "simplified"
+          }]
+        }, {
+          "featureType": "transit",
+          "elementType": "all",
+          "stylers": [{
+            "hue": "#e9ebed"
+          }, {
+            "saturation": 10
+          }, {
+            "lightness": 69
+          }, {
+            "visibility": "on"
+          }]
+        }, {
+          "featureType": "water",
+          "elementType": "all",
+          "stylers": [{
+            "hue": "#e9ebed"
+          }, {
+            "saturation": -78
+          }, {
+            "lightness": 67
+          }, {
+            "visibility": "simplified"
+          }]
+        }, {
+          "featureType": "water",
+          "elementType": "geometry.fill",
+          "stylers": [{
+            "visibility": "on"
+          }, {
+            "color": "#00ccff"
+          }, {
+            "saturation": "100"
+          }, {
+            "lightness": "83"
+          }]
+        }]
+      };
+
+      // Get the HTML DOM element that will contain your map 
+      // We are using a div with id="map" seen below in the <body>
+      var mapElement = document.getElementById('map');
+
+      // Create the Google Map using our element and options defined above
+      var map = new google.maps.Map(mapElement, mapOptions);
+
+      // Let's also add a marker while we're at it
+
+      var image = 'img/map-marker.png';
+      var marker = new google.maps.Marker({
+        position: new google.maps.LatLng(47.8176217, 16.2469351),
+        map: map,
+        icon: image,
+        title: 'Tier Klinik'
+      });
+    }
+  </script>
 
   <script src="scripts/index.min.js"></script>
 

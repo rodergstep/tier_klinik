@@ -7897,11 +7897,7 @@ li {
     .side-button-wrap {
       position: absolute; } }
   .side-button-wrap:hover {
-    height: auto;
-    right: 0; }
-    .side-button-wrap:hover .side-button {
-      -webkit-box-shadow: none;
-              box-shadow: none; }
+    height: auto; }
   .side-button-wrap .side-button {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -8010,6 +8006,16 @@ li {
     height: 2px;
     margin-bottom: 1em;
     background-color: white; }
+
+.side-button-wrap.is-open {
+  right: 0; }
+  .side-button-wrap.is-open .side-button {
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+
+#map {
+  height: 481px;
+  width: 100%; }
 
 .content-head {
   -webkit-box-shadow: inset 0px 5px 13px 0px rgba(91, 108, 114, 0.2);
