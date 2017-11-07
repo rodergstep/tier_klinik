@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
   <!--  Meta  -->
@@ -27,6 +27,7 @@
     } catch (e) {}
   </script>
   <!--  Styles  -->
+
   <link rel="stylesheet" href="styles/index.processed.css">
 
   <!-- Intellectual web font loader -->
@@ -51,7 +52,7 @@
               <div class="row">
                 <div class="top-header__tel col-xs-12 col-lg-6">
                   <span>24 h Notdienst: </span>
-                  <span><a href="tel:+06991 2622500">0699 1 2622 500</a></span>
+                  <span><a href="tel:+069912622500">0699 1 2622 500</a></span>
                 </div>
                 <div class="top-header__schedule col-xs-12 col-lg-6">
                   <span>Öffnungszeiten: </span>
@@ -68,6 +69,7 @@
             <a class="navbar-brand" href="index.html">
               <img data-src="img/logo.svg" alt="Logo: Tier Klinik" class="header__logo">
             </a>
+
             <ul class="header__nav">
               <li class="nav-item">
                 <a class="nav-link" href="content.html">Über uns</a>
@@ -81,7 +83,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="dos.html">Do’s and Don’ts</a>
               </li>
-              <li class="nav-item  active">
+              <li class="nav-item active">
                 <a class="nav-link" href="contact.html">Kontakt</a>
               </li>
             </ul>
@@ -91,7 +93,7 @@
     </header>
 
     <!-- MAIN -->
-    <main class="main contact" role="main">
+    <main class="main contact">
       <!-- Content head -->
       <section class="content-head">
         <div class="section-container">
@@ -154,6 +156,7 @@
         </div>
       </div>
     </main>
+
     <!-- Footer -->
     <footer class="footer">
       <section class="footer__top-nav">
@@ -223,7 +226,7 @@
           <nav class="footer__bottom-nav">
             <a href="#" class="bottom-nav__link">Kontakt</a>
             <a href="#" class="bottom-nav__link">Impressum</a>
-            <a href="#" class="bottom-nav_link">Disclaimer</a>
+            <a href="#" class="bottom-nav__link">Disclaimer</a>
           </nav>
           <div class="footer__copy">© Tierklinik Wiener Neustadt</div>
         </div>
@@ -239,7 +242,7 @@
       <div class="side-button__panel">
         <h5 class="panel__title">Wir sind jederzeit <br>für sie da!</h5>
         <p class="panel__paragraph">Für Notfälle ist die Klinik Tag und Nacht, am Wochenende und auch feiertags erreichbar. </p>
-        <a href="tel:+069912622500" role="button" class="panel__btn btn__transparent"> <span class="bold-text">24 Stunden Notdienst</span> <br> <span>Tel: 0699 1 2622 500</span>
+        <a href="tel:069912622500" role="button" class="panel__btn btn__transparent"> <span class="bold-text">24 Stunden Notdienst</span> <br> <span>Tel: 0699 1 2622 500</span>
         </a>
         <span class="panel__btn panel__schedule btn__transparent"> 
           <span class="bold-text">Reguläre Öffnungszeiten</span> <br>
@@ -253,7 +256,9 @@
         </a>
       </div>
     </div>
+
   </div>
+
 
   <!-- Scripts -->
   <script>
@@ -264,21 +269,7 @@
   <script async src="scripts/libs/lazyload.min.js"></script>
   <script type="text/javascript" src="scripts/libs/jquery-1.12.0.min.js"></script>
   <!-- map -->
-  <!-- <script>
-    function initMap() {
-      // Create a map object and specify the DOM element for display.
-      var map = new google.maps.Map(document.getElementById('map'), {
-        center: {
-          lat: 47.8176217,
-          lng: 16.2469351,
-        },
-        zoom: 15
-      });
-    }
-  </script> -->
-
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&callback=initMap" async defer></script>
-
   <script type="text/javascript">
     // When the window has finished loading create our google map below
     google.maps.event.addDomListener(window, 'load', initMap);
