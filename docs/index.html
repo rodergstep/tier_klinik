@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
   <!--  Meta  -->
@@ -33,16 +33,11 @@
   <!-- Intellectual web font loader -->
   <script src="scripts/libs/fontfaceobserver.min.js"></script>
   <script>
-    var futura = new FontFaceObserver('futura-pt');
-    futura.load().then(function() {
+    var output = new FontFaceObserver('futura-pt');
+    output.load().then(function() {
       console.log('futura-pt font has loaded');
     });
-    var eurostileCondensed = new FontFaceObserver('eurostile-condensed');
-    eurostileCondensed.load().then(function() {
-      console.log('eurostile-condensed font has loaded');
-    });
   </script>
-
 </head>
 
 <body>
@@ -57,7 +52,7 @@
               <div class="row">
                 <div class="top-header__tel col-xs-12 col-lg-6">
                   <span>24 h Notdienst: </span>
-                  <span><a href="tel:+06991 2622500">0699 1 2622 500</a></span>
+                  <span><a href="tel:+069912622500">0699 1 2622 500</a></span>
                 </div>
                 <div class="top-header__schedule col-xs-12 col-lg-6">
                   <span>Öffnungszeiten: </span>
@@ -82,7 +77,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="team.html">Team</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item active">
                 <a class="nav-link" href="klinik.html">Klinik</a>
               </li>
               <li class="nav-item">
@@ -97,7 +92,7 @@
       </div>
     </header>
     <!-- MAIN -->
-    <main class="main" role="main">
+    <main class="main">
 
       <section class="slider">
         <div class="hero-slider">
@@ -217,106 +212,106 @@
         </div>
       </section>
     </main>
-  </div>
+    <!-- Footer -->
+    <footer class="footer">
+      <section class="footer__top-nav">
+        <div class="top-nav__inner section-container">
+          <div class="top-nav__column">
+            <h5 class="top-nav__title">Über Uns</h5>
+            <ul class="top-nav__list">
+              <li class="top-nav__item">
+                <a href="#" class="top-nav__link">Geschichte</a>
+              </li>
+              <li class="top-nav__item">
+                <a href="#" class="top-nav__link">Team</a>
+              </li>
+              <li class="top-nav__item">
+                <a href="#" class="top-nav__link">Forschung & <br> Weiterentwicklung</a>
+              </li>
+            </ul>
+          </div>
+          <div class="top-nav__column">
+            <h5 class="top-nav__title">Team</h5>
+            <ul class="top-nav__list">
+              <li class="top-nav__item">
+                <a href="#" class="top-nav__link">Geschäftsleitung</a>
+              </li>
+              <li class="top-nav__item">
+                <a href="#" class="top-nav__link">Tierärzte</a>
+              </li>
+              <li class="top-nav__item">
+                <a href="#" class="top-nav__link">Pfleger & sonstige <br> Mitarbeiter</a>
+              </li>
 
-  <!-- footer -->
-  <footer class="footer">
-    <section class="footer__top-nav">
-      <div class="top-nav__inner section-container">
-        <div class="top-nav__column">
-          <h5 class="top-nav__title">Über Uns</h5>
-          <ul class="top-nav__list">
-            <li class="top-nav__item">
-              <a href="#" class="top-nav__link">Geschichte</a>
-            </li>
-            <li class="top-nav__item">
-              <a href="#" class="top-nav__link">Team</a>
-            </li>
-            <li class="top-nav__item">
-              <a href="#" class="top-nav__link">Forschung & <br> Weiterentwicklung</a>
-            </li>
-          </ul>
-        </div>
-        <div class="top-nav__column">
-          <h5 class="top-nav__title">Team</h5>
-          <ul class="top-nav__list">
-            <li class="top-nav__item">
-              <a href="#" class="top-nav__link">Geschäftsleitung</a>
-            </li>
-            <li class="top-nav__item">
-              <a href="#" class="top-nav__link">Tierärzte</a>
-            </li>
-            <li class="top-nav__item">
-              <a href="#" class="top-nav__link">Pfleger & sonstige <br> Mitarbeiter</a>
-            </li>
-
-          </ul>
-        </div>
-        <div class="top-nav__column">
-          <h5 class="top-nav__title">Klinik</h5>
-          <ul class="top-nav__list">
-            <li class="top-nav__item">
-              <a href="#" class="top-nav__link">Lorem ipsum</a>
-            </li>
-            <li class="top-nav__item">
-              <a href="#" class="top-nav__link">Leistungen</a>
-            </li>
-            <li class="top-nav__item">
-              <a href="#" class="top-nav__link">Ausstattung & <br> Behandlungsformen</a>
-            </li>
-          </ul>
-        </div>
-        <div class="top-nav__column top-nav__column--last">
-          <h3 class="top-nav__logo">
-            <img data-src="img/logo.svg" alt="Tier klinik">
-          </h3>
-          <div class="top-nav__contact">
-            <p class="top-nav__tel">
-              <span>24 h Notdienst:</span>
-              <span>0699 1 2622 500</span>
-            </p>
-            <p class="top-nav__schedule">
-              <span>Öffnungszeiten:</span>
-              <span>Mo-Fr 9 bis19 Uhr</span>
-            </p>
+            </ul>
+          </div>
+          <div class="top-nav__column">
+            <h5 class="top-nav__title">Klinik</h5>
+            <ul class="top-nav__list">
+              <li class="top-nav__item">
+                <a href="#" class="top-nav__link">Lorem ipsum</a>
+              </li>
+              <li class="top-nav__item">
+                <a href="#" class="top-nav__link">Leistungen</a>
+              </li>
+              <li class="top-nav__item">
+                <a href="#" class="top-nav__link">Ausstattung & <br> Behandlungsformen</a>
+              </li>
+            </ul>
+          </div>
+          <div class="top-nav__column top-nav__column--last">
+            <h3 class="top-nav__logo">
+              <img data-src="img/logo.svg" alt="Tier klinik">
+            </h3>
+            <div class="top-nav__contact">
+              <p class="top-nav__tel">
+                <span>24 h Notdienst:</span>
+                <span>0699 1 2622 500</span>
+              </p>
+              <p class="top-nav__schedule">
+                <span>Öffnungszeiten:</span>
+                <span>Mo-Fr 9 bis19 Uhr</span>
+              </p>
+            </div>
           </div>
         </div>
+      </section>
+      <div class="section-container">
+        <div class="footer__bottom-inner row align-items-center">
+          <nav class="footer__bottom-nav">
+            <a href="#" class="bottom-nav__link">Kontakt</a>
+            <a href="#" class="bottom-nav__link">Impressum</a>
+            <a href="#" class="bottom-nav__link">Disclaimer</a>
+          </nav>
+          <div class="footer__copy">© Tierklinik Wiener Neustadt</div>
+        </div>
       </div>
-    </section>
-    <div class="section-container">
-      <div class="footer__bottom-inner row align-items-center">
-        <nav class="footer__bottom-nav">
-          <a href="#" class="bottom-nav__link">Kontakt</a>
-          <a href="#" class="bottom-nav__link">Impressum</a>
-          <a href="#" class="bottom-nav__link">Disclaimer</a>
-        </nav>
-        <div class="footer__copy">© Tierklinik Wiener Neustadt</div>
+    </footer>
+
+    <!-- Notfall side buton -->
+    <div class="side-button-wrap">
+      <a href="#" class="side-button align-items-center">
+        <img data-src="img/plus.svg" alt="Plus icon" class="side-button__plus">
+        <span>Notfall?</span>
+      </a>
+      <div class="side-button__panel">
+        <h5 class="panel__title">Wir sind jederzeit <br>für sie da!</h5>
+        <p class="panel__paragraph">Für Notfälle ist die Klinik Tag und Nacht, am Wochenende und auch feiertags erreichbar. </p>
+        <a href="tel:069912622500" role="button" class="panel__btn btn__transparent"> <span class="bold-text">24 Stunden Notdienst</span> <br> <span>Tel: 0699 1 2622 500</span>
+        </a>
+        <span class="panel__btn panel__schedule btn__transparent"> 
+          <span class="bold-text">Reguläre Öffnungszeiten</span> <br>
+        <span>MO-FR 9:00-19:00 Uhr</span>
+        </span>
+        <p class="panel__paragraph">Während unserer Öffnungszeiten bitten wir Sie um telefonische Terminvereinbarung um Wartezeiten zu vermeiden. </p>
+        <span class="panel__separator"></span>
+        <h5 class="panel__title">Adresse</h5>
+        <p class="panel__paragraph">Grazer Str. 46, <br>2700 Wiener Neustadt</p>
+        <a href="#" role="button" class="panel__btn btn__transparent"> <span class="bold-text">Route anzeigen</span> <br> <span>Google Maps</span>
+        </a>
       </div>
     </div>
-  </footer>
-  <!-- Notfall side buton -->
-  <div class="side-button-wrap">
-    <a href="#" class="side-button align-items-center">
-      <img data-src="img/plus.svg" alt="Plus icon" class="side-button__plus">
-      <span>Notfall?</span>
-    </a>
-    <div class="side-button__panel">
-      <h5 class="panel__title">Wir sind jederzeit <br>für sie da!</h5>
-      <p class="panel__paragraph">Für Notfälle ist die Klinik Tag und Nacht, am Wochenende und auch feiertags erreichbar. </p>
-      <a href="tel:+069912622500" role="button" class="panel__btn btn__transparent"> <span class="bold-text">24 Stunden Notdienst</span> <br> <span>Tel: 0699 1 2622 500</span>
-      </a>
-      <span class="panel__btn panel__schedule btn__transparent"> 
-        <span class="bold-text">Reguläre Öffnungszeiten</span> <br>
-      <span>MO-FR 9:00-19:00 Uhr</span>
-      </span>
-      <p class="panel__paragraph">Während unserer Öffnungszeiten bitten wir Sie um telefonische Terminvereinbarung um Wartezeiten zu vermeiden. </p>
-      <span class="panel__separator"></span>
-      <h5 class="panel__title">Adresse</h5>
-      <p class="panel__paragraph">Grazer Str. 46, <br>2700 Wiener Neustadt</p>
-      <a href="#" role="button" class="panel__btn btn__transparent"> <span class="bold-text">Route anzeigen</span> <br> <span>Google Maps</span>
-      </a>
-    </div>
-  </div>
+
   </div>
 
   <!-- Scripts -->
