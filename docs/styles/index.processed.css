@@ -7893,7 +7893,7 @@ li {
   @media only screen and (max-width: 480px) {
     .side-button-wrap {
       right: -320px; } }
-  @media only screen and (max-height: 771px) {
+  @media only screen and (max-height: 700px) {
     .side-button-wrap {
       position: absolute; } }
   .side-button-wrap:hover {
